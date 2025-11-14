@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Review Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+            text-align: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-image: url("Image/Techno.jpg");
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .checkboxes label,
+        .radios label {
+            font-weight: normal;
+            display: block;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        h1{
+            color: white;
+        }
+
+        a{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: black;
+            padding: 6px;
+            text-align: center;
+            margin-left: 25px;
+            transition: font-size 5 ease;
+            text-decoration: none;
+        }
+        
+        a:hover{
+            font-size: 25px;
+            cursor: url('Image/Pickaxe.png'), pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Please fill out your review</h1>
+    </header>
+
+    <form action="Submit.html" method="GET">
+        
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        
+        <label>How satisfied are you with our service?</label>
+        <div class="radios options">
+            <label><input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied</label>
+            <label><input type="radio" name="satisfaction" value="Satisfied"> Satisfied</label>
+            <label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label>
+            <label><input type="radio" name="satisfaction" value="Dissatisfied"> Dissatisfied</label>
+        </div>
+
+        
+        <label>What did you like? (Check all that apply)</label>
+        <div class="checkboxes options">
+            <label><input type="checkbox" name="likes" value="Customer Service"> Customer Service</label>
+            <label><input type="checkbox" name="likes" value="Product Quality"> Product Quality</label>
+            <label><input type="checkbox" name="likes" value="Website Experience"> Website Experience</label>
+            <label><input type="checkbox" name="likes" value="Price"> Price</label>
+        </div>
+
+        
+        <label for="review">Additional Comments:</label>
+        <textarea id="review" name="review" rows="5" placeholder="Type here..."></textarea>
+
+        
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <footer>
+        <a href="Home.html">Home</a>
+    </footer>
+
+</body>
+
+</html>
+
+

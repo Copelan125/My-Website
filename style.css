@@ -1,0 +1,59 @@
+
+body, h1, h3, p{
+    font-family: 'VT323', monospace;
+    }
+
+a{
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+      background-color: white;
+      border-radius: 5px;
+      padding: 6px;
+      text-align: center;
+      margin-left: 100px;
+      transition: font-size 5 ease, color 5 ease;
+    }
+
+a:hover {
+      font-size: 45px;
+      color: white;
+      background: black;
+      cursor: url('Image/Pickaxe.png'), pointer;
+        }
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("Image/Techno.jpg");
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+footer{
+    margin-top: 600px;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+    font-size: 20px;
+    }
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    }
+th {
+    background-color: #2ecc71;
+    color: rgb(0, 0, 0);
+    }
